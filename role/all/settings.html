@@ -218,7 +218,7 @@
                     <h2 class="wb-inv">Integrations</h2>
 
                     <p>The following integrations are available for your form. Select the toggle to enable or disable the integration. All fields are mandatory.</p>
-                    <form method="get">
+                    <form method="get" autocomplete="false">
                         <div class="panel panel-default mrgn-bttm-md">
                             <header class="panel-heading panel-min-height">
                                 <label class="switch-light switch-material">
@@ -355,12 +355,12 @@
                                                 </div>
                                                 <div class="col-md-2">
 
-                                                    <input name="cops-name" id="cops-name" type="text" size="50" required class="form-control" list="variables" maxlength="100">
-                                                    <datalist id="variables">
+                                                    <input name="cops-name" id="cops-name" type="text" size="50" class="form-control" list="name-variables" maxlength="100" autocomplete="off">
+                                                    <datalist id="name-variables">
                                                         <!--[if lte IE 9]><select><![endif]-->
-                                                        <option label="{Form name variable 1}" value=""></option>
-                                                        <option label="{Form name variable 1}" value=""></option>
-                                                        <option label="{Form name variable 3}" value=""></option>
+                                                        <option label="{Form name variable 1}" value="{FRM_NAME}"></option>
+                                                        <option label="{Form name variable 1}" value="{FRM_EMAIL}"></option>
+                                                        <option label="{Form name variable 3}" value="{FRM_PHONE}"></option>
                                                         <!--[if lte IE 9]></select><![endif]-->
                                                     </datalist>
                                                 </div>
@@ -372,7 +372,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-email" id="cops-email" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-email" id="cops-email" type="text" size="50" class="form-control" maxlength="100" autocomplete="false">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -381,7 +381,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-phone" id="cops-phone" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-phone" id="cops-phone" type="text" size="50" class="form-control" maxlength="100" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -390,7 +390,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-address" id="cops-address" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-address" id="cops-address" type="text" size="50" class="form-control" maxlength="100" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -399,7 +399,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-city" id="cops-city" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-city" id="cops-city" type="text" size="50" class="form-control" maxlength="100" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -408,7 +408,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-province" id="cops-province" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-province" id="cops-province" type="text" size="50" class="form-control" maxlength="100" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -417,7 +417,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-postal" id="cops-postal" type="text" size="50" class="form-control" maxlength="9">
+                                                    <input name="cops-postal" id="cops-postal" type="text" size="50" class="form-control" maxlength="9" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -426,7 +426,7 @@
                                                     <div class="pull-right hidden-sm hidden-xs"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input name="cops-country" id="cops-country" type="text" size="50" class="form-control" maxlength="100">
+                                                    <input name="cops-country" id="cops-country" type="text" size="50" class="form-control" maxlength="100" autocomplete="off">
                                                 </div>
                                             </div>
                                         </div>
